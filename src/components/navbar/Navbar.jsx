@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const navLinks = [
   { name: "Homepage", href: "/" },
@@ -50,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       <button className="md:hidden" onClick={() => setOpen((prev) => !prev)}>
-        Menu
+        <GiHamburgerMenu />
       </button>
       {open && (
         <div className="absolute bg-blue-400 top-10 right-0 float-end h-full w-1/2 flex flex-col items-center justify-center gap-2  md:hidden">
