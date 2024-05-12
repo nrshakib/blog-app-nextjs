@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         bg: "var(--bg)",
         btn: "var(--btn)",
+        bgSoft: "var(--bgSoft)",
+        textSoft: "var(--textSoft)",
       },
     },
   },
